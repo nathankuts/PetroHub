@@ -1,1 +1,29 @@
+import mysql.connector
 
+# Connect to MySQL Database
+db = mysql.connector.connect(
+    host="localhost",
+    user="username",
+    password="password",
+    database="gas_station_db"
+)
+
+# Create a cursor object to execute SQL queries
+cursor = db.cursor()
+
+# Create a table for gas stations
+cursor.execute("CREATE TABLE gas_stations (id INT AUTO_INCREMENT PRIMARY KEY, name VARCHAR(255), fuel_type VARCHAR(255), price FLOAT)")
+
+# Insert data into the table
+sql = "INSERT INTO gas_stations (name, fuel_type, price) VALUES (%s, %s, %s)"
+values = [
+    ("Station A", "Regular", 2.50),
+    ("Station B", "Regular", 2.55),
+    ("Station C", "Diesel", 3.00),
+    # Add more data as needed
+]
+cursor.executemany(sql, values)
+
+# Commit changes and close connection
+db.commit()
+db.close()
