@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Gas Stations in Kitale County</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <style>
+        #map {
+            height: 600px;
+        }
+        
+        .popup-content {
+            background-color: #044004;
+            color: white;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        .fuel-type {
+            color: #ffcc00;
+        }
+
+        .price {
+            color: #f2083a;
+        }
+        .blink {
+            animation: blink-animation 1s infinite; /* Blinking animation */
+        }
+
+        @keyframes blink-animation {
+            0% { opacity: 1; }
+            50% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+    <div id="map"></div>
+
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script>
+        var map = L.map('map').setView([1.0151, 35.0077], 10); // Kitale, Kenya coordinates and zoom level
+
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+        }).addTo(map);
+
+        // Predefined gas station locations (replace with your data)
+        var gasStations = [
+            { 
+                name: "Total", 
+                fuel: [
+                    { type: "Regular", price: 125 },
+                    { type: "Diesel", price: 130 }
+                ], 
+                latitude: 1.0123, 
+                longitude: 35.0112 
+            },
+            { 
+                name: "Rubys", 
+                fuel: [
+                    { type: "Regular", price: 130 },
+                    { type: "Premium", price: 150 }
+                ], 
+                latitude: 1.0187, 
+                longitude: 35.0056 
+            },
+            { 
+                name: "Wilkins", 
+                fuel: [
+                    { type: "Regular", price: 130 },
+                    { type: "Premium", price: 150 }
+                ], 
+                latitude: 1.0287, 
+                longitude: 35.0057 
+            },
+            { 
+                name: "Shell", 
+                fuel: [
+                    { type: "Regular", price: 130 },
+                    { type: "Premium", price: 150 }
+                ], 
+                latitude: 1.0387, 
+                longitude: 35.0055 
+            },
+            // Add more gas station data as needed
+        ];
+
+        // Function to add markers for gas stations
+        function addMarkers() {
+            gasStations.forEach(function(station) {
+                var popupContent = `<div class="popup-content"><b>${station.name}</b><br>`;
+                station.fuel.forEach(function(fuel) {
+                    popupContent += `Fuel Type: <span class="fuel-type">${fuel.type}</span><br>Price: KES <span class="price">${fuel.price}</span><br>`;
+                });
+                popupContent += `<a href="gas_station_details_${station.name.replace(/\s+/g, '_').toLowerCase()}.html">More Details</a></div>`; // Link to the detailed page
+                var marker = L.marker([station.latitude, station.longitude]).addTo(map)
+                    .bindPopup(popupContent);
+                
+                // Add blink class to marker icon
+                marker._icon.classList.add('blink');
+            });
+        }
+
+        // Add gas station markers to the map
+        addMarkers();
+
+        // Function to check if user is near any gas station
+        function checkNearbyGasStation(userLatitude, userLongitude) {
+            gasStations.forEach(function(station) {
+                var stationDistance = calculateDistance(userLatitude, userLongitude, station.latitude, station.longitude);
+                if (stationDistance < 0.5) { // Define a threshold radius (e.g., 0.5 km)
+                    alert(`A gas station (${station.name}) is nearby!`);
+                    return;
+                }
+            });
+        }
+
+        // Function to calculate distance between two points in kilometers
+        function calculateDistance(lat1, lon1, lat2, lon2) {
+            var R = 6371; // Radius of the earth in km
+            var dLat = deg2rad(lat2 - lat1);  // deg2rad below
+            var dLon = deg2rad(lon2 - lon1);
+            var a = Math.sin(dLat / 2) * Math.sin(dLat / 2) +
+                Math.cos(deg2rad(lat1)) * Math.cos(deg2rad(lat2)) *
+                Math.sin(dLon / 2) * Math.sin(dLon / 2);
+            var c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
+            var d = R * c; // Distance in km
+            return d;
+        }
+
+        function deg2rad(deg) {
+            return deg * (Math.PI / 180);
+        }
+
+        // Get user's current location
+        navigator.geolocation.getCurrentPosition(function(position) {
+            var userLatitude = position.coords.latitude;
+            var userLongitude = position.coords.longitude;
+            checkNearbyGasStation(userLatitude, userLongitude);
+        });
+    </script>
+</body>
+</html>
