@@ -38,7 +38,7 @@ For this project, I decided to use the above front-end technologies and take it 
 All the pages in the app were built using HTML5. Maps incorporated the openstreet maps API feature.
 
 ### Static javascript files
-I decided to use static files as a database for the apps data. Every time a location or gas price is changed, I would have to update it accordingly in the app. Though burdensome, this would help in making the information provided by the app more secure.
+I decided to use static files as a database for the apps data. Every time a location or gas price is changed, I would have to update it accordingly in the app. Though burdensome, this would help in making the information provided by the app more secure and trustworthy.
 
 This app has no login or sign up feature instead it is open to anyone looking for gas price information
 
