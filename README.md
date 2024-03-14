@@ -17,7 +17,7 @@ Nathan Makhombe [@nathanielkhombe](https://twitter.com/nathanielkhombe)    [Nath
 ### Blog Post
 After the development, I wrote a blog post to show the jorney to realising PetroHub
 
-[KittyKnowhow: The journey](https://medium.com/@dillysannan/kittyknowhow-the-journey-b7cddcbb8453)
+[PetroHub: The journey](https://sinemawriter.wordpress.com/2024/03/14/petrohub-the-journey/)
 
 ### Deployment site
 Check out Petrohub here: https://nathankuts.github.io/PetroHub/
