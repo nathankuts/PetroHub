@@ -32,7 +32,7 @@ A little glimpse of the user interface
 ### Overview
 This web app was built using Front end technologies(HTML5, CSS3, and Javascript). A lot of work was put into developing a front-end that was simple but easy to use. 
 
-<img src="https://github.com/Dillys3567/kittyknowhow/assets/80262558/03d516a7-5dc7-4b94-bdcc-c8ae215576ee" width="800">
+![Screenshot (15)](https://github.com/nathankuts/PetroHub/assets/158057320/8aedc83b-efd3-435e-97c4-5e7d3abb1a95)
 
 ### Flutter and Dart
 For this project, I decided to use a framework that was not taught in the foundations year to learn more about the framework. 
