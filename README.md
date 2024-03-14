@@ -14,7 +14,7 @@ Other features include: viewing posts without creating an account or signing in.
 This project is a Portfolio Project that marks the conclusion the Foundations Year at ALX. This was a solo project.
 
 ### Developer
-Dillys Naa Kai Annan [@DillysAnnan](https://twitter.com/DillysAnnan) [Dillys Annan-linkedin](https://www.linkedin.com/in/dillys-annan-083b10211/)
+Nathan Makhombe [@nathanielkhombe](https://twitter.com/nathanielkhombe) [](https://www.linkedin.com/in/nathan-makhombe-4663582a7/)
 
 ### Blog Post
 After the development phase, I wrote a blog post to show the jorney to realising KittyKnowhow
