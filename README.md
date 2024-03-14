@@ -19,6 +19,9 @@ After the development, I wrote a blog post to show the jorney to realising Petro
 
 [KittyKnowhow: The journey](https://medium.com/@dillysannan/kittyknowhow-the-journey-b7cddcbb8453)
 
+### Deployment site
+Check out Petrohub here: https://nathankuts.github.io/PetroHub/
+
 ### User Interface
 A little glimpse of the user interface
 
