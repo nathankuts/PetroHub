@@ -4,11 +4,9 @@
 ## Introduction
 
 ### The Project
-Any cat parent knows that although you love your cat, taking care of them may not be the easiest task on earth. You sometimes worry whether you are giving them enough food, attention or the best care and love. That's were KittyKnowhow comes in.
+Searching for gas stations is hard but finding affordable gas prices is even hard enough.
 
-KittyKnowhow is a mobile application where users interact with other cat parents and share experiences and knowledge about living with cats. They get to create posts asking questions or even sharing valuable experiences that other users can comment on. The application provides the platform for learning from other people's experiences.
-
-Other features include: viewing posts without creating an account or signing in.
+Petrohub is a web application that provides drivers(or anyone really) with realtime gas prices information in the locale. My county people have been 'gas hopping' on various gas stations in a bid to find a cheaper gas price offing. No more that, with PetroHub you can easily find any gas station in the area and its latest price offings.
 
 ### The Context
 This project is a Portfolio Project that marks the conclusion the Foundations Year at ALX. This was a solo project.
@@ -34,27 +32,19 @@ This web app was built using Front end technologies(HTML5, CSS3, and Javascript)
 
 ![Screenshot (15)](https://github.com/nathankuts/PetroHub/assets/158057320/8aedc83b-efd3-435e-97c4-5e7d3abb1a95)
 
-### Flutter and Dart
-For this project, I decided to use a framework that was not taught in the foundations year to learn more about the framework. 
+### HTML5, CSS3 AND JAVASCRIPT
+For this project, I decided to use the above front-end technologies and take it as a learning opportunity to study them and master them further.
 
-All the pages in the app were built using the Flutter stateful widget. Some custom components and widgets were built using both stateful and stateless widgets.
+All the pages in the app were built using HTML5. Maps incorporated the openstreet maps API feature.
 
-For routing within the application the MaterialPageRoute was used.
+### Static javascript files
+I decided to use static files as a database for the apps data. Every time a location or gas price is changed, I would have to update it accordingly in the app. Though burdensome, this would help in making the information provided by the app more secure.
 
-### Supabase
-I decided to go with Supabase form my backend/database as it provides all the functionality I need to develop this project such as authentication, database storage and cloud storage. The relational database structure made calling any required information simple.
-
-Images are kept in the Supabase buckets.
-
-As the app connects people and their cats and allows post creation and commenting, authentication is a necessity. Suapbase provides a straightforward and easy-to-implement solution. Users simply sign up with an existing email address and a password of their choice. Supabse Authentication does the heavy lifting to sign in users.
+This app has no login or sign up feature instead it is open to anyone looking for gas price information
 
 ## Acknowledgement
 -ALX staff - For the help, advice and resources they provided us with during this project and during all our curriculum.
 
--Cohort 14 and all ALX students - For your friendship, invaluable support, and insight not only for this project, but over the last year.
+-Cohort 16 and all ALX students - For your invaluable support, and insight not only for this project, but over the last year.
 
--KitKat - For being his cute and cuddly self and bringing me joy with his furry self
-
--Sven - For encouraging me when I was struggling to fix bugs
-
--YOU - For reading this documentation and testing out KittyKnowhow. I hope you enjoy it!
+-Myself- for doing this. At least i know i can do it if i try.
