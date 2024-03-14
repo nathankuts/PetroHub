@@ -14,26 +14,23 @@ Other features include: viewing posts without creating an account or signing in.
 This project is a Portfolio Project that marks the conclusion the Foundations Year at ALX. This was a solo project.
 
 ### Developer
-Nathan Makhombe [@nathanielkhombe](https://twitter.com/nathanielkhombe) [Nathan-Makhombe](https://www.linkedin.com/in/nathan-makhombe-4663582a7/)
+Nathan Makhombe [@nathanielkhombe](https://twitter.com/nathanielkhombe)    [Nathan-Makhombe](https://www.linkedin.com/in/nathan-makhombe-4663582a7/)
 
 ### Blog Post
-After the development phase, I wrote a blog post to show the jorney to realising KittyKnowhow
+After the development, I wrote a blog post to show the jorney to realising PetroHub
 
 [KittyKnowhow: The journey](https://medium.com/@dillysannan/kittyknowhow-the-journey-b7cddcbb8453)
 
 ### User Interface
 A little glimpse of the user interface
 
-<img src="https://github.com/Dillys3567/kittyknowhow/assets/80262558/68edaacc-27f9-4d50-973c-9f0cd9ee1632" width="300">
-<img src="https://github.com/Dillys3567/kittyknowhow/assets/80262558/f65cafcb-9929-4cfc-814c-668719bb62c8" width="300">
-<img src="https://github.com/Dillys3567/kittyknowhow/assets/80262558/28b083e1-f545-425c-8373-ead4045ea189" width="300">
-<img src="https://github.com/Dillys3567/kittyknowhow/assets/80262558/9d9a5f04-ae1a-451a-b70d-ff58e9d19bad" width="300">
-<img src="https://github.com/Dillys3567/kittyknowhow/assets/80262558/91eed1e4-30e0-4bbf-a67e-bb3c72490c8a" width="300">
+![Screenshot (9)](https://github.com/nathankuts/PetroHub/assets/158057320/6ca1f6a6-9269-4c8d-aefa-060a8f954cbe)
+
 
 
 ## Architecture
 ### Overview
-The mobile app was built using Flutter framework. A lot of work was put into developing a front-end that was simple but easy to use. 
+This web app was built using Front end technologies(HTML5, CSS3, and Javascript). A lot of work was put into developing a front-end that was simple but easy to use. 
 
 <img src="https://github.com/Dillys3567/kittyknowhow/assets/80262558/03d516a7-5dc7-4b94-bdcc-c8ae215576ee" width="800">
 
