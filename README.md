@@ -1,5 +1,5 @@
 # PetroHub - Your shopping site for gas stations
-< img src = "https://github.com/nathankuts/PetroHub/blob/master/assets/images/Screenshot%20(13).png" >
+https://github.com/nathankuts/PetroHub/blob/master/assets/images/Screenshot%20(13).png?raw=true
 
 ## Introduction
 
